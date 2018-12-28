@@ -3,11 +3,12 @@ import { Provider } from 'react-redux';
 // Required before import store
 import './config/reactotron';
 import store from './store';
-import TodoList from './TodoList';
+
+import Routes from './routes/index';
 
 const App = () => (
   <Provider store={store}>
-    <TodoList />
+    <Routes />
   </Provider>
 );
 
